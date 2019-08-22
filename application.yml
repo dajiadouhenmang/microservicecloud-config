@@ -1,1 +1,16 @@
-spring a
+spring:
+  profiles:
+    active: 
+      - dev
+---
+spring:
+  profiles: dev #开发环境
+  application:
+    name: mircoservicecloud-config-atguigu-dev
+---
+spring:
+  profiles: test #测试环境
+  application:
+    name: mircoservicecloud-config-atguigu-test
+    
+#该文件请保存为UTF-8的格式
